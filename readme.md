@@ -4,6 +4,18 @@ This is code example illustrating how to authenticate in Customer's Canvas Hub, 
 
 ## Get started
 
+### Configuration
+
+Once you clone this repo, you need to configure the **.env** file. To do it, create a copy based on the **.env.sample** and then add your Customer's Canvas details there. 
+
+- `CCHUB_BASEURL` - depending on your instance, it is either https://customerscanvashub.com (US), https://eu.customerscanvashub.com (Europe), or https://au.customerscanvashub.com (Australia).
+- `CCHUB_STOREFRONTID` - a storefront (or *integration*) record ID, created as per [Help Center > Admin's Guide > Settings > Integrations](https://customerscanvas.com/help/admin-guide/settings/integrations.html).
+- `CCHUB_CLIENTID` and `CCHUB_CLIENTSECRET` - an OAuth2 Client Credentials of your app, registered in your tenant as per [Help Center > Admin's Guide > Settings > External Apps](https://customerscanvas.com/help/admin-guide/settings/external-apps.html)
+- `CCHUB_TENANTID` - specify your tenant ID - see the [Help Center > Admin's Guide > Settings > Tenant](https://customerscanvas.com/help/admin-guide/settings/tenant.html). 
+- `CCHUB_PRODUCTID` - create a product in Customer's Canvas as per [Help Center > Admin's Guide > PIM Module > Creating products](https://customerscanvas.com/help/admin-guide/pim/creating-products.html) and set its ID here.
+
+### Install and run
+
 Run 
 
 ```
