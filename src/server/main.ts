@@ -20,6 +20,16 @@ app.get("/api/get-token/:userId", async (req, res) => {
   });
 });
 
+app.get("/api/get-product-info/", async (req, res) => {
+  
+  res.json({
+    tenantId: config.tenantId,
+    productId: config.productId,
+    cchubApiGatewayUrl: config.apiUrl,
+    storefrontId: config.storefrontId
+  });
+});
+
 app.post("/api/save-project/", async (req, res) => {
   const { privateDesignId, userId, orderId } = req.body;
 

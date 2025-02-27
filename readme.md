@@ -43,4 +43,10 @@ All the integration code is implemented in **cchub-service.ts**. See comments in
 
 ## Frontend 
 
-TBD
+The frontend app is located in the **src/client** folder. It is a React app which is organized as follows: 
+
+- In **App.tsx** you can configure routing.
+- The **Main** component (see the **components** folder) is a navigation between all code example components available in this project. It uses the `SAMPLES` structure defined in the **constants** to build this page.
+- The **samples** folder contains the code example components which focus on various aspects of Workflow Elements usage. For example, **samples/SimpleEditor.tsx** contains a basic example of Simple Editor initialization. 
+
+Feel free to create copies of the sample components to experiment or make modifications directly in the pages. 

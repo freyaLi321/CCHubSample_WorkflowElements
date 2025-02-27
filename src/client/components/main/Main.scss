@@ -1,0 +1,28 @@
+.main {
+    &__samples {
+        padding: 20px 0;
+        &-title {
+            margin-top: 64px;
+            margin-bottom: 32px;
+            font-weight: 500;
+            font-size: 24pt;
+            text-align: left;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            &__item {
+
+                margin-bottom: 16px;
+                
+                &-title {
+                    cursor: pointer;
+                    font-size: 16pt;
+                }
+            }
+        }
+    }
+}

@@ -4,6 +4,8 @@ export class CCHubConfiguration {
     public readonly storefrontId: number;
     public readonly clientId: string;
     public readonly clientSecret: string;
+    public readonly tenantId: number;
+    public readonly productId: number;
 
 
     constructor() {
@@ -12,5 +14,7 @@ export class CCHubConfiguration {
         this.storefrontId = Number(process.env["CCHUB_STOREFRONTID"]);
         this.clientId = process.env["CCHUB_CLIENTID"] ?? "";
         this.clientSecret = process.env["CCHUB_CLIENTSECRET"] ?? "";
+        this.tenantId = Number(process.env["CCHUB_TENANTID"]);
+        this.productId = Number(process.env["CCHUB_PRODUCTID"]);
     }
 }
